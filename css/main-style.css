@@ -1,0 +1,234 @@
+* {
+
+    text-decoration: none; 
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+}
+p{
+    text-align: justify;
+}
+/****************
+NAVBAR
+****************/
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    z-index: 1;
+
+}
+nav.white {
+    background: white;
+}
+
+.logo {
+    margin-left: 20px;
+    position: fixed;
+    float: left;
+}
+.logo img {
+    height:50px;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+
+nav.white ul li a{
+
+    color: black
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul li  .current{
+    border-width: 1px;
+    border-style: solid;
+}
+
+nav ul li a:hover{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.menu-icon {
+    line-height: 50px;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 10px 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+@media(max-width: 1200px){
+    nav ul{
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    nav {
+        padding: 0;
+        height:fit-content;
+        background-color:white;
+    }
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 10px;
+    }
+
+    nav ul {
+          height: 0px;
+          padding: 0px;
+          
+    }
+
+
+    .showing {
+          height: 100vh;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 15px;
+    }
+    nav ul li a{
+        color: black;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+
+
+/******
+HEADER
+******/
+
+.header {
+    width: 100%;
+    height: 500px;    
+
+    background: linear-gradient( to right,rgba(1, 34, 93, 0.8) 0%,rgba(1, 34, 93, 0.6) 70% ), url(../images/bogota_edited.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.innovacol {
+    width: 800px;  
+    margin-top:140px;
+    margin-bottom:40px;
+}
+
+
+@media(max-width: 900px){
+    .innovacol {
+        width: 80%;  
+        margin-top:140px;
+        margin-bottom:40px;
+    }
+
+    .header h2{
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 600px){
+    .header h2{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 500px){
+    .header {
+        width: 100%;
+        height: 400px;    
+    }
+    .header h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+/***
+FOOTER
+****/
+footer {
+    text-align: center;
+
+    padding: 20px 0px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding-top: 30px;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+.short_logo{
+    width:200px
+}
+@media(max-width: 370px){
+    .header {
+        width: 100%;
+        height: 400px;    
+    }
+    .header h2{
+        font-size: 17px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+}

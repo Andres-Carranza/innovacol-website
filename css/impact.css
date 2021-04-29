@@ -1,0 +1,199 @@
+.content{
+    width: 1000px;
+    margin: auto;
+}
+
+.coding-bootcamp{
+    margin-top:50px; 
+}
+h1{
+    font-size: 60px;
+    margin-bottom:50px;
+}
+
+p{
+    font-size: 25px;
+}
+/**************
+carousel code
+************/
+
+#car{
+    margin-top: 50px;
+}
+
+blockquote{
+    height: 350px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 3rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+
+.carousel-item p{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.carousel-item footer{
+    font-size: 25px;
+}
+
+/************
+PAST PROJECTS
+************/
+
+.past-projects{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.past-projects h2{
+    color: black;
+}
+
+.project{
+    margin-top: 50px;
+    width:100%;
+    background-color: rgb(140, 201, 221);
+    border-radius:20px;
+    padding:40px;
+}
+
+.project h3{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.project h4{
+    margin-bottom: 30px;
+}
+
+.project img{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+}
+
+@media(max-width: 1000px){
+    .content{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 40px;
+        margin-bottom:50px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+
+
+    blockquote{
+        width: 100%;
+    }
+
+    .carousel-item p{
+        margin-top: 0px;
+        font-size: 17px;
+    }
+    .carousel-item footer{
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    .text-lg {
+        font-size: 2rem;
+    }
+
+    .carousel-item{
+        padding:10px;
+    }
+    #car{
+        padding:20px!important;
+    }
+}
+
+@media(max-width: 600px){
+
+
+
+    .content{
+        width: 100%;
+    }
+
+    .coding-bootcamp{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #car {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .past-projects > h1{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .past-projects >p{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project{
+        border-radius: 0px;
+        padding: 40px 20px;
+    }
+    .project img{
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+    .carousel-item p{
+        margin-top: 0px;
+        font-size: 15px;
+    }
+    .carousel-item footer{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item{
+        padding:10px;
+    }
+    .carousel-inner{
+        padding:10px  !important;
+    }
+    #car{
+        padding:10px!important;
+    }
+
+    
+}

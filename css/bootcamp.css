@@ -1,0 +1,206 @@
+.wrapper{
+    width: 100%;
+    background-color: rgb(242,155,60);
+}
+
+
+
+
+.content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.content h1{
+    font-size:60px;
+    text-align:center;
+    line-height: 200px;
+    color: white;
+    font-weight: bolder;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.button {
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin: auto;
+    width: 60%;
+
+    border: 3px solid white;
+    border-radius: 7px;
+
+    text-align: center;
+    padding: 20px 10px;
+
+    color: white;
+}
+
+.button:hover {
+    color: #2C2B30;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.general-info{
+    background-color: rgb(155, 155, 155);
+    padding:20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.general-info h2{
+    color:black;
+}
+
+.general-info > div{
+    display:flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cat{
+    padding-left: 20px;
+    margin: auto;
+    width: 200px;
+}
+.general-info h3{
+    color:black;
+    font-size:30px;
+}
+
+.cont {
+    width:700px;
+}
+
+.general-info p{
+    color: black;
+    font-size:18px;
+}
+
+.syllabus{
+    width:100%;
+    background-color: rgb(55,180,220);
+    border-radius:20px;
+    padding-bottom:30px;
+}
+
+.session{
+    margin-left: 80px;
+    margin-bottom: 50px;;
+    color: white;
+}
+
+.session ul{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+
+@media (max-width: 1000px) {
+    .content{
+        width: 100%;
+    }
+    .content div{
+        border-radius: 0px;
+    }
+
+    .content h1{
+        font-size:40px;
+        text-align:center;
+        line-height: 100px;
+    }
+
+    .button {
+        font-size: 20px;
+        width: fit-content;
+        padding: 20px 40px;
+    }
+
+    .general-info{
+        padding: 20px 10%;
+    }
+
+    .general-info > div{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .general-info  .cat{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    
+    .cont {
+        width: 100%;
+    }
+    
+    .general-info p{
+        color: black;
+        font-size:18px;
+    }
+
+
+}
+
+@media(max-width: 600px){
+
+    .content h1{
+        font-size:25px;
+    }
+
+    .button {
+        font-size: 15px;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+
+    .general-info h2{
+        font-size: 25px;
+    }
+
+    .general-info h3{
+        font-size: 20px;
+    }
+    .general-info p{
+        font-size: 15px;
+    }
+
+    .session{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 30px;;
+        color: white;
+    }
+    
+    .session ul{
+        margin-top: 15px;
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .session h3{
+        font-size: 18px;
+    }
+
+    .session h2{
+        font-size: 20px;
+    }
+}
